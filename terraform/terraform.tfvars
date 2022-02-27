@@ -1,0 +1,8 @@
+project_key         = "aws-demo-frontend"
+aws_region          = "eu-central-1"
+s3_bucket_name      = "demo.rozkocha.com"
+s3_bucket_env       = "development"
+domain              = "rozkocha.com"
+subdomain           = "demo"
+hosted_zone         = "rozkocha.com"
+hosted_zone_id      = "Z0279286M0YRET607UTF"

@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "aws s3 cp ./dist/aws-demo-frontend s3://demo.rozkocha.com --recursive"
   },
   "private": true,
   "dependencies": {
