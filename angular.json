@@ -71,7 +71,8 @@
               "browserTarget": "aws-demo-frontend:build:production"
             },
             "development": {
-              "browserTarget": "aws-demo-frontend:build:development"
+              "browserTarget": "aws-demo-frontend:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
