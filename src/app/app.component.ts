@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {environment} from "../environments/environment";
 
 interface StatusResponse {
   message: string;
@@ -17,7 +18,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.httpClient.get<StatusResponse>("/api/status").subscribe({
+    this.httpClient.get<StatusResponse>(environment.apiUrl + "/status").subscribe({
       next: response => this.message = response.message,
       error: err => this.message = "Error(status: " + err.status + ", message: " + err.message + ")"
     });
